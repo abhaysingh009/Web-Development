@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .centerme{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">heading 1</h1>
+    <h2 style="text-align: center;">heading 2</h2>
+    <h3 style="text-align: center;">heading 3</h3>
+    <!-- div tag: suppose we have to ceter all three headings then we have to mention in each heading text-align:center
+     but if we wrap all three heading in a div and when we center div then its content will be automatically centered
+     similarily more we can define more properteis like bg color so istead of writing code of background color for each element we just change the bg color of div  and many more..... -->
+     <br><br>
+     <div style="text-align:center">
+        <h1 >heading 1</h1>
+        <h2 >heading 2</h2>
+        <h3 >heading 3</h3>
+     </div>
+     <!-- now we solved a problem that now we dont have to write code of other properties for individual elements just put in div and apply property on div but 
+      there is a problem if we want that the property we apply will not be applied on each element int the div
+      like in a div a heading and a para and we want to center only heading then if we apply center text on div then para will also be centered -->
+
+      <!-- so we uses class and id;   class and id have many use cases  -->
+       <h1 class="centerme">heading 1</h1>
+       <h2>heading 2</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, deserunt. Ratione officia corporis voluptate porro odio! Qui, error. Sint id saepe molestiae quas.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, fugit molestiae officia voluptatibus consequuntur, eveniet est vitae at porro, vero autem nulla enim magnam libero facilis obcaecati ut quibusdam incidunt?</p>
+      <h3 class="centerme">heading 3</h3>
+      <!-- we define properties in class and all element of the same class will get the property of that class and it is not unique means multiple elems can have the same class -->
+    
+</body>
+</html>
