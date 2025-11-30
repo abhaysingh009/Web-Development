@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>University Registration Form</h1> 
+   <p>Please fillout the Form</p>
+   <hr>
+    
+    <form >
+        <h2>Personal details</h2>
+        <label for="fname" >First Name:</label>
+        <input type="text" placeholder="Enter First Name" id="fname" name="FirstName" required>
+        <!-- required attributes means it is mandatory to fill this input before submitting -->
+        
+
+        <br><br>
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="Enter Last Name" id="lname" name="Surname">
+        
+
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" required>
+        <br><br>
+
+
+        <h3>Gender</h3>
+         <label for="male">Male</label>
+         <input type="radio" name="gender" id="male" value="male" required>
+         <br>
+
+         <label for="female">Female</label>
+         <input type="radio" name="gender" id="female" value="Female" required>
+         <br><br>
+
+
+         <h3>Upload Your photo:</h3>
+         <input type="file" name="photo">
+         <!-- to upload files from your device use input type file -->
+         <hr>
+
+         <h2>Contact Information</h2>
+
+         <label for="email">Email Address:</label>
+         <input type="email" placeholder="Enter Email" id="email">
+         <!-- input type email validates email eg checks for @,dot etc -->
+         <br><br>
+
+
+         <label for="phoneNumber">Phone Number:</label>
+         <input type="tel" placeholder="Enter Phone No.." id="phoneNumber">
+         <!-- tel==telecom -->
+        <br><br>
+
+
+        <label for="Address">Mailing Address</label>
+        <br>
+        <textarea name="Address" id="Address" rows="5" cols="25"></textarea>
+        <!-- text area provides a text area -->
+        <hr>
+
+
+        <h2>Acadmic Information</h2>
+        <label for="course">Select Your Course</label>
+        <select name="course" id="course">
+            <option value="CSE">CSE</option>
+            <option value="ME">ME</option>
+            <option value="CE">CE</option>
+        </select>
+        <!-- select tag provids draw down feature option can be either on or off so we have to provide values corresponding each ops -->
+
+
+        <h3>Extra Curricular Activity</h3>
+
+        <input type="checkbox" name="extraAct" value="Sports" id="sports"><!--checkbox ON or OFF-->
+        <label for="sports">Sports</label><br>
+
+         <input type="checkbox" name="extraAct" value="Music And Arts" id="music">
+         <label for="music">Music and Arts</label><br>
+
+         <input type="checkbox" name="extraAct" value="Technology club" id="tech">
+         <label for="tech">Technology club</label><br>
+
+         <input type="checkbox" name="extraAct" value="Volunteering" id="vol">
+         <label for="vol">Volunteering</label>
+         <hr>
+
+
+         <h3>Create your Account</h3>
+         <label for="pass">Create a Password:</label>
+         <input type="password" id="pass" name="password">
+         <br><br>
+
+         
+         <label for="sec Que">Security Question:</label>
+        <select name="Security Question" id="sec Que">
+            <option value="what was your first pet name">what was your first pet name</option>
+        </select>
+        <br><br>
+
+
+        <label for="ans">Security Answer:</label>
+        <input type="text" name="SecurityAns" id="ans">
+        <br><br>
+
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to term and conditions</label>
+        <hr>
+        <br><br>
+
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+            <!-- OR -->
+        <!-- <button type="submit">Register</button>
+        <button type="reset">Clear </button> -->
+        <!-- We prefer the <button> tag because:
+
+    It can contain HTML (icons, images, formatted text).
+
+    It is easier to style and customize.
+
+    It is more flexible and better for modern UI.
+
+    <input type="button"> can only show plain text and is harder to style. -->
+
+
+    </form>
+
+</body>
+</html>

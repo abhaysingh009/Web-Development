@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="n" >Name:</label>
+      <input type="text" name="Name" id="n" />
+      <br /><br />
+
+      <label >Age:</label>
+      <input type="number" name="age" />
+      <br /><br />
+
+      <label >Password:</label>
+      <input type="password" name="password" />
+      <br /><br />
+
+      
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="Female">
+      <br><br>
+
+      <label for="c++">C++</label>
+      <input type="checkbox" name="subject" id="c++" value="C++">
+
+       <label for="java">Java</label>
+      <input type="checkbox" name="subject" id="java" value="Java">
+
+       <label for="py">Python</label>
+       <input type="checkbox" name="subject" id="py" value="Python">
+    
+      <br><br>
+
+      <input type="submit" />
+      
+    </form>
+  </body>
+</html>
+<!-- form tag to create a form -->
+<!-- input tag to take input from user  type means which type of data user will be enter -->
+<!-- label tag to add label on input box or to tell user in from what you have to fill like name ,age... -->
+<!-- in input tag name attribute tells to backend that what is it actually because some time all fields of form 
+ are not mandatory to fill .so when frontend sends data to backend it sends it in the form of name value pair
+ http://10.130.219.171:5500/index.html?Name=Abhay&age=21&password=123 like this  -->
+ <!-- input type radio provides radio buttons and at if name of more than one radio 
+  button is same then it allows to select only one button -->
+<!-- in label for attribute links the button and lable like if click on lable then it goes in input field 
+ eg.above if you click on male instead of radio button then it will automatically select male radio button 
+ but value of for will be same as input's id to identify input uniquely -->
+
+ <!-- http://10.130.219.171:5500/index.html?Name=as&age=39&password=welkmqw&gender=on in this link you can see the value of 
+  gender is on becz radio buttons sends only either on or off  as value,so how backend will understand gender .. 
+  so we use value attribute  in input tag to tell backend the actual  value of gender -->
+
