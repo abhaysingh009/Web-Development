@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is our media website</h1>
+    <!-- this method is not preferable -->
+    <!-- <audio src="sample-6s.mp3" controls></audio> -->
+   <!-- <video src="sample-2.mp4" controls height="400"></video> -->
+
+   <!-- this method is preferable becaz it allows you to add multiple audios format
+    . usecase :when a browser not support an audio type then second or third or... will play
+    if none of given files are supported by browser then it will print text   eg.your browswer doesn't 
+    support this audio.-->
+    <audio controls>
+        <source src="./sample-6s.mp3" type="audio/mp3">
+        <!-- <source src="./sample-6s.mp3" type="audio/ogg"> -->
+         if audio files will not supported by browswer then i'll get print
+    </audio>
+
+    <video height="300" controls >
+        <source src="./sample-2.mp4" type="video/mp4">
+        <!-- <source src="./sample-2.mp4" type="video/3gp"> -->
+        <!-- <source src="./sample-2.mp4" type="video/hd"> -->
+         if audio files will not supported by browswer then i'll get print
+    </video>
+    <!--  this type of link you will get from youtube https://www.youtube.com/watch?v=y3OOaXrFy-Q&list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01 
+     add /embed after .com your video will be get added to the page -->
+
+     <!-- allowfullscreen allow to play yt video on full screen otherwise you can't play video on full screen-->
+    <iframe src="https://youtube.com/embed/7WBgSS-6fJc?si=MHD81XaM3Hfma8i7"  allowfullscreen>
+    </iframe>
+    <iframe src="https://www.youtube.com/embed/watch?v=y3OOaXrFy-Q&list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01" >
+    </iframe>
+
+
+
+</body>
+</html>
