@@ -1,0 +1,73 @@
+
+/* tag selector or element selector*/
+/* h1{
+background-color: aquamarine;
+font-size: 100px;
+}
+ul{
+    background-color: blanchedalmond;
+}
+
+h2{
+    background-color: blue;
+} */
+
+
+
+ /* id selector  # based selection____________________*/
+
+ /* #first{
+    background-color: aquamarine;
+ }
+ #second{
+    background-color:pink;
+ } */
+
+
+ /* Class based selection ___________________________*/
+
+ /* .third{
+     background-color: green;
+    } */
+
+
+/* group based selection ________________________*/
+/* in group based selection we can use  multiple selectors   */
+/* h1,.third{
+    background-color: rgb(189, 35, 125);
+
+} */
+
+
+/* COLOR METHODS:-----------------------------------------------------*/
+/* colors rgb(38, 35, 189)
+colors       valid values
+red           0-255
+green         0-255
+blue          0-255   */
+
+/* Hexadecimal form rgb*/
+/* h2{
+    background-color: #4131f1;
+    6 degits 2 for red 2 for green 2 blue
+ }  */
+
+/* ___________________________________________________________________________________ */
+/* rgba(189, 35, 125, 0.253);
+here a stands for transparency 0 means fully transparent no color will be showen 
+its value lies b/w 0 - 1 */
+
+/* ____________________________________________________________________________________ */
+/* h2{
+    background-color: hsl(hue, saturation, lightness);
+    values:              0-360 ,0-100%      0-100%
+} */
+/* - Hue: The pure color itself. This is a degree on the color wheel (0-360). 0 is red, 120 is green, 240 is blue.
+- Saturation: The intensity or vibrancy of the color. This is a percentage (0% to 100%). 0% is gray, 
+100% is the most vivid version of the color.
+- Lightness: The brightness of the color. This is a percentage (0% to 100%). 
+0% is black, 50% is the normal color, and 100% is white. */
+/* ______________________________________________________________________________ */
+/* h2{
+    background-color: hsla(0, 50%, 50%, 0.5);
+} */
