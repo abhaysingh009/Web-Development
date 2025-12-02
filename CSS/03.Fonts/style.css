@@ -1,0 +1,81 @@
+/* fonts */
+
+/* h1{
+    font-size: 50px;
+} */ 
+/* pixel--picture element */
+
+/* parent child relationship */
+/*in index.html  childs of <body>--h1,h2,ul 
+                childs of  ul--li */
+
+/* ul{
+    font-size: 20px;
+}
+li{
+    font-size : 1em; 
+} */
+/* em means size respect to its parent like li is child of ul so if li font size is 20 px
+ then li font-size 1em =1*20 px
+     ,,   ,,    ,,  2 em=2*20px */
+
+
+/* rem -----------------------------------     */
+/* x rem=x*sizeof root element(which is always<html>) */
+
+/* html{
+    font-size: 20px;
+}*/
+/* h2{
+    font-size: 2rem;  40px
+}  */
+
+/* vw and vh---------------------------- */
+/* vw=viewport width and vh =viewport height */
+/* 2 vw means 2% of viewport width */
+/* 2 vh means 2% of viewport height */
+/* h2{
+    font-size: 6vh;/* 6% of viewport height
+} */
+
+/* % unit */
+/* defines percentege size to its deirect parent  */
+/* ul{
+    font-size: 20px;
+} */
+/*  
+li{
+     font-size: 50%; ==10px 
+} */
+
+/* h2{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;3 fonts means if one is not selected then other... 
+    font-weight: 300;
+    font-style: italic;
+
+} */
+
+/* use external font */
+/* we can use fonts from www.google fonts.com */
+/* first link in html head */
+/* h2{
+    
+
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: italic;
+} */
+
+/* The font Shorthand Property */
+ /* The Problem: Writing out all four properties separately can be repetitive.
+ The Solution: The font shorthand property allows you to set multiple font properties in 
+a single line */
+/* The Syntax: font: font-style font-weight font-size font-family;
+
+font-size and font-family are required for the shorthand to work. The 
+others are optional*/
+/* h2{
+    font:italic 200 30px Georgia, serif; 
+     
+} */
