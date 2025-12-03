@@ -1,0 +1,57 @@
+h1{
+    background-color: rgb(165, 104, 42);
+    height: 300px;
+    width: 300px;
+
+    /* Boder */
+    /* border-width:5px;           
+    border-style: solid; /*dashed,dotted*/
+    /* border-color:blue;             */
+    /* OR     */
+    border: 10px solid rgba(21, 233, 13, 0.959); 
+    /* border-top: 10px solid rgba(21, 233, 13, 0.959); 
+    border-left: 10px solid rgba(21, 233, 13, 0.959); 
+    border-right: 10px solid rgba(21, 233, 13, 0.959); 
+    border-bottom: 10px solid rgba(21, 233, 13, 0.959);  */
+    
+    border-radius:20px;
+
+
+
+
+
+     /* Padding : distance b/w boder and cotent*/
+     /* padding: 10px; */
+     /* OR */
+     /* padding-top: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-bottom: 10px; */
+     /* OR */
+    padding: 10px 20px 30px 40px;
+            /* T    R   B   L */
+
+    padding: 20px 40px;
+    /*       T B  L R*/
+
+
+
+
+     /* margin :distance b/w two borders of two elements*/
+
+     margin: 30px;
+     /* margin-top: 30px;
+     margin-left: 30px;
+     margin-right: 30px;
+     margin-bottom: 30px;  */
+
+
+
+
+}
+
+h2{
+    background-color: pink;
+    border :2px solid blue;
+
+}
