@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* *{
+            margin: 0px;
+            padding: 0px;
+           *{} called universal selector It selects all elements in the HTML page.
+           Used when you want to apply a style to every element. 
+        } */
+        span{
+            color:blue;
+            display: block;
+        }
+        h1{
+            background-color: aqua;
+            /* display: inline; */
+        }
+        h2{
+            /* display: inline; */
+        }
+    </style>
+
+<!-- Block-level elements: Start on a new line and occupy full width (<div>, <p>, <h1,2,..>).we can apply height, width,padding ,margin
+     on these . we can change block level elements to inline element by applying display :inline;
+
+Inline elements: Stay within a line and take only necessary space (<span>, <a>, <em>).we can't apply height ,widht on these
+    also we can padding and margin in only horizontal but can't vertica.
+    we can change block level elements to inline element by applying display :block; -->
+
+
+    <!-- display:inline-block  :will remein  inline but will give respect to height width padding... 
+     "display:inline-block   behave like both inline and block "  -->
+
+     <!-- box-sizing:border-box = height width padding included in box size  -->
+     <!-- box-sizing:content-box = only content size is included in box size  -->
+
+
+</head>
+<body>
+    <h1>Hello Abhay </h1>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptate repudiandae sit velit veniam nemo est fuga possimus, odio maiores aut? 
+        Deleniti libero alias neque corrupti voluptas dignissimos molestias! Voluptates 
+        sunt distinctio dicta asperiores quibusdam.</span>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Odit temporibus<span> beatae magni </span><!-- span tag is a inline element used when you 
+         to change between somthing in between paragraph or some thing like this ...more use cases-->perferendis repudiandae 
+         ratione rerum. Earum voluptatibus labore corrupti placeat
+          temporibus commodi porro nesciunt voluptatum necessitatibus 
+          atque est accusantium, nisi ex 
+        provident qui velit ad, et dolorem.</p>
+</body>
+</html>
