@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0px;
+            padding: 0px;
+        } */
+        h2{
+            background-color: burlywood;
+            /* position:static; */
+            position: relative;
+            /* bottom: 50px;*/
+            /* top: 50px; */
+            left: 50px; 
+        }
+
+        h3{
+            background-color: pink;
+            position: fixed;
+            top: 0px;
+            left: 50px;
+        }
+        h4{
+            background-color: brown;
+            position: sticky;
+            top: 0px;
+        }
+
+        p{
+        background-color: greenyellow;
+        position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: aqua; height: 1200px;">
+    <h1>I am Heading 1</h1>
+    <h2>I am Heading 2</h2>
+
+    <p>i am absolute item</p>
+    <h3>I am Navigation Bar</h3>
+    <h4>I am best in the world</h4>
+    </div>
+
+</body>
+</html>
+ <!-- positions  -->
+  <!-- 1.static ( by default)
+  2.realative: we can set  position from top left right bottom |we  we can 
+  set its position anywhere in the page but it will not leave (space) its fist 
+  postion means the the content of bottom  of it  will not come up 
+  "RELATIVE ONLY CHANGES ITS POSITION NOT SHIFTS"
+  3.fixed: postion  fix on the screen 
+  4.sticky : eg : h4's pos is sticky and top =0; it means when it 
+  reaches at 0 px from top it will be fixed  -->
+  <!-- 5.absolute  "ABSOLUTE leaves (shifts) ITS POSITION.
+ we can move it accordingly and if we defines its position
+ from top r l bot.. then moves itself respect to its ancestor 
+ IFF ancestor's pos is defined else fixes its position acc to screen " -->
+
+
+ <!-- Z index val=0(by default): z index moves position in z direction
+   means if an element is top of an 2nd elemenet but we want to see 2nd elem at top 
+   then we will set its z index value greater than first elem  -->
