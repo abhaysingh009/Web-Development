@@ -1,0 +1,98 @@
+<!-- flexboxfroggy.com FOR PRACTIX FLEX BOX -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 700px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;/*gap between child ,alternate for give margin separately to each child */
+            /* flex-direction: column; */
+
+            /* justify-content: center; all children in center one after another*/
+            /* justify-content: end; move all towards end 
+            justify-content: left;
+            justify-content: right; */
+            /* justify-content:space-evenly ;  space distributed evenly in between*/
+           /* /* justify-self: unset;unset means as it is (not needed normally) */
+           /* justify-content: space-around; space ditributed arround items */
+           /* justify-content: space-between; first and last will go start and end and middile elements will get arranged with equal space*/
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;/*if display size */
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            /* margin: 5px; */
+        }
+        .first{
+            background-color: orange;
+            /*flex-shrink:4;*//*when layout changes it shrinks 4x faster than other ,its def value is one   */
+            /*flex-grow:1;*//* occupies unsed space */
+        }
+         .second{
+            background-color: green;
+            /* flex-grow:1; */
+            /*flex-basis: 200px;*//*overrides length arround main axis(eg. if flex direction is row then it overrides width and if flex dir is col then overrides height) */
+
+        } 
+        .third{
+            background-color: red;
+            align-self: flex-start;/*overrides align-items */
+        } 
+        .fourth{
+            background-color: chartreuse;
+        }
+    </style>
+
+</head>
+<body style="background-color: black;">
+    <div class="container">
+        <div class="box first">First</div>
+        <div class="box second">second</div>
+        <div class="box third">third</div>
+        <div class="box fourth">fourth</div>
+
+    </div>
+    
+</body>
+</html>
+<!-- Flexbox: Used for layout design. 
+A parent (container) and child (items) are required for Flexbox.
+When we make the parent display: flex, all its children become inline elements 
+and they appear one after another.
+
+flex-direction: By default, it is row-wise, but we can change it. 
+For example, if we set flex-direction: column, then the children will be arranged column-wise.
+-->
+<!-- align-items:-its like "justify-content"  but it works arround cross axis and justify content works arround main axis
+ for example:- flex-direction :"row" ; and justify-content:"center" then items will get aligned center from left right (becz in flex direction row ,main axis is horizontal line and cross axis is vertical line (2D) )
+ 
+ Now if we set align-items:"center" then items willget aligned center from top bottom -->
+<!-- 
+
+ "flex-wrap:"" tells Flexbox whether the items should stay in one line or move to the next line when there is not enough space.
+
+Values:
+
+flex-wrap: nowrap; (default)
+
+All items stay in one line.
+
+They shrink if needed.
+
+flex-wrap: wrap;
+
+Items move to the next line when they don’t fit.
+
+Useful for responsive layouts.
+
+flex-wrap: wrap-reverse;
+
+Same as wrap, but the new line appears above instead of below. -->
