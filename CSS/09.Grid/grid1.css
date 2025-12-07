@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.container{
+    
+    display: grid;
+    /* grid-template-rows: 200px 200px ;
+    grid-template-columns: 200px 200px; */
+    grid-template-rows:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* fr means fraction  above 1fr 1fr means in row divide in two parts according to container width then giv one one part to both boxes same for column  */
+    gap: 10px;
+    /* padding: 10px;  */
+    background-color: pink;
+    height: 400px;
+    width: 400px;
+}
+
+.first
+{
+    background-color: orange;
+}
+.second{
+    background-color: green;
+}
+.third{
+    background-color: red;
+}
+.fourth{
+    background-color: blueviolet;
+}
