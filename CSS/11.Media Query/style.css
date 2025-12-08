@@ -1,0 +1,52 @@
+/* 1. Mobile-First Approach (Recommended Approach)
+✔ Idea:
+
+Design small screens first, then add CSS for larger screens later.
+
+✔ How it works:
+
+Write default CSS for mobile (small screens).
+
+Use min-width media queries to scale up for tablets and desktops. */
+
+/* Desktop-First Approach
+✔ Idea:
+
+Design large screens first, then reduce styles for smaller screens.
+
+✔ How it works:
+
+Write default CSS for desktop.
+
+Use max-width media queries to adjust for tablets and mobiles. */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    font-size: 40px;
+    background-color: aqua;
+
+}
+/* @media screen and (max-width: 600px) means when screen's width is less than 600 px then override this css 
+"only those property changes which are overriden in media query eg. if didn't difine width and hieght then it will remain same when screen size decreases " */
+@media screen and (max-width: 600px){/*if screen's width is greater <= 600px*/
+    .container{
+        height: 300px;
+        width: 300px;
+        background-color: pink;
+        font-size: 30px;
+    }
+
+}
+@media screen and (min-width: 800px){ /*if screen's width is greater >= 800px*/
+    .container{
+        height: 300px;
+        width: 300px;
+        background-color: orange;
+        font-size: 60px;
+    }
+
+}
