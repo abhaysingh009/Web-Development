@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    /* box-shadow: 10px 10px blue; */
+    /* box-shadow: 10px 10px blue; */
+/*   offset of   x    y  | color*/
+
+    /* box-shadow: 20px 20px 10px blue; */
+/*                           blur */
+
+    /* box-shadow: 20px 20px 10px 20px blue; */
+    /*                         spread shadow radius: means increase shadow 20px in each side  */
+
+/* 
+-->offset of x
+-->offset of y
+-->blur radius
+-->spread radius
+--> color
+*/
+
+box-shadow: inset 10px 10px 20px blue;
+/* inset means shadow in the box not out the  box */
+
+}
