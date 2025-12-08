@@ -1,10 +1,15 @@
 # Web-Development
 📘 Web Development Practice Repository
 🛠️ Technologies Used
+
 -HTML5
+
 -CSS3
+
 -JavaScript(in progress...)
+
 -MERN Stack (in progress...)
+
 
 This repository contains all my web development practice files.
 Each file includes detailed comments explaining important concepts such as:
