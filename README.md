@@ -36,7 +36,7 @@ Build a revision-friendly collection of examples
 
 🧠 What You’ll Find Inside
 
-Explained HTML tags (e.g., <header>, <nav>, <section>, <div>)
+Explained HTML tags 
 
 CSS fundamentals (colors, fonts, margins, padding, borders)
 
