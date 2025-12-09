@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* ------------------------------ */
+        /* Global Reset for All Elements */
+        /* ------------------------------ */
+        * {
+            padding: 0px;                 /* Remove default padding */
+            margin: 0px;                  /* Remove default margin */
+            box-sizing: border-box;       /* Include padding & border inside width/height */
+        }
+
+        /* ------------------------------ */
+        /* Page Layout Styling */
+        /* ------------------------------ */
+        body {
+            height: 100vh;                /* Full viewport height */
+            background-color: black;      /* Black background */
+            display: flex;                /* Use Flexbox for centering */
+            justify-content: center;      /* Center content horizontally */
+            align-items: center;          /* Center content vertically */
+        }
+
+        /* ------------------------------------------ */
+        /* Container Box that Holds the Moving Text   */
+        /* ------------------------------------------ */
+        .container {
+            background-color: rgba(255, 255, 255, 0.05); /* Slight transparent white background */
+            border: 1px solid rgba(255, 255, 255, 0.05); /* Soft border */
+            font-size: 40px;                             /* Text size for the paragraph */
+            color: white;                                /* Text color */
+            padding: 10px;                               /* Inner spacing */
+            width: 70%;                                  /* Container width */
+            border-radius: 5px;                          /* Rounded corners */
+            white-space: nowrap;                         /* Prevent text from wrapping */
+            overflow: hidden;                            /* Hide text when it overflows */
+        }
+
+        /* ---------------------------------------------- */
+        /* Text Inside Container That Will Scroll/Move    */
+        /* ---------------------------------------------- */
+        p {
+            margin-left: 100%;             /* Start text from outside right side */
+            animation-name: moving;        /* The animation applied */
+            animation-duration: 5s;        /* Total time for one full scroll */
+            animation-iteration-count: infinite;  /* Repeat forever */
+        }
+
+        /* ---------------------------- */
+        /* Animation: Moving Paragraph  */
+        /* ---------------------------- */
+        @keyframes moving {
+            from {
+                margin-left: 100%;        /* Start completely outside the container (right side) */
+            }
+            to {
+                margin-left: -70%;        /* Move text past the left side until it disappears */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>I Am a Temporary Paragraph...</p> <!-- The scrolling paragraph text -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Reset default spacing for all elements */
+* {
+    margin: 0px;                /* Removes default margin */
+    padding: 0px;               /* Removes default padding */
+    box-sizing: border-box;     /* Makes width/height include padding + border */
+    background-color: black;    /* Sets background color of the whole page */
+}
+
+.container {
+    padding: 20px;              /* Adds space inside the container */
+    position: relative;         /* Allows absolutely-positioned child to move inside this box */
+}
+
+.box {
+    height: 100px;              /* Height of the animated box */
+    width: 150px;               /* Width of the animated box */
+    background-color: orange;   /* Starting background color */
+    
+    /* Animation properties */
+    animation-name: moving;             /* Name of the animation to run */
+    animation-duration: 3s;             /* Total time to complete one animation cycle */
+    animation-iteration-count: infinite;/* Repeat the animation forever */
+    animation-timing-function: linear;  /* Moves at a constant speed */
+    animation-delay: 2s;                /* Wait 2 seconds before animation starts */
+    /* animation-direction: alternate;   Makes animation run forward then backward */
+    /* animation-fill-mode: backwards;   Apply initial animation styles before animation starts */
+
+    position: absolute;        /* Allows free movement using top/left during animation */
+}
+
+
+
+/* Simple animation using from → to */
+/*
+@keyframes moving {
+    from {
+        background-color: orange;   /* Starting color */
+        /* top: 10px;                  Starting vertical position */
+        /* left: 10px;                 Starting horizontal position */
+    /* } */
+    /* to { */
+        /* background-color: blue;     Ending color */
+        /* top: 10px;                  Same vertical position */
+        /* left: 1500px;               Move across the screen to the right */
+    /* } */
+/* } */
+                            
+
+/* Animation with multiple stages */
+@keyframes moving {
+
+    /* Starting point — Top-left */
+    0% {
+        background-color: orange; /* Starting color */
+        top: 10px;                /* Distance from top of container */
+        left: 10px;               /* Distance from left of container */
+    }
+
+    /* Move horizontally to the top-right */
+    25% {
+        background-color: blue;   /* Change color */
+        top: 10px;                /* Same vertical position */
+        left: 1500px;             /* Move far right */
+    }
+
+    /* Move vertically down from right side */
+    50% {
+        background-color: blue;   /* Color stays same */
+        top: 800px;               /* Moves down */
+        left: 1500px;             /* Stays at right side */
+    }
+
+    /* Move horizontally back to bottom-left */
+    75% {
+        background-color: blue;   /* Same color */
+        top: 800px;               /* Stay at bottom */
+        left: 10px;               /* Move to left */
+    }
+
+    /* Return to the starting point */
+    100% {
+        background-color: blue;   /* Final color */
+        top: 10px;                /* Back to top */
+        left: 10px;               /* Back to start left */
+    }
+}
+
+
+
