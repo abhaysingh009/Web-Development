@@ -1,0 +1,78 @@
+/* ========================================================= */
+/* Transition needs a trigger (like hover) to work            */
+/* Animation runs automatically without any trigger           */
+/* ========================================================= */
+
+* {
+    padding: 0px;                 /* Removes default inner spacing of all elements */
+    margin: 0px;                  /* Removes default outer spacing of all elements */
+    box-sizing: border-box;       /* Width & height include padding and border */
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    height: 100vh;                /* Makes container equal to full viewport height */
+    background-color: black;      /* Sets background color to black */
+
+    display: flex;                /* Enables flexbox layout for children */
+    justify-content: center;      /* Centers child elements horizontally */
+    align-items: center;          /* Centers child elements vertically */
+
+    gap: 10px;                    /* Space between flex items */
+    perspective: 800px;           /* Adds depth for 3D transforms of children */
+}
+
+/* ================= BOX ================= */
+.box {
+    height: 150px;                /* Height of the box */
+    width: 150px;                 /* Width of the box */
+    background-color: orange;     /* Initial background color */
+    cursor: pointer;              /* Changes cursor to pointer on hover */
+
+    /* -------- TRANSITION -------- */
+    transition: all 3s;           /* Smooth transition of all properties in 3 seconds */
+
+    /* -------- ANIMATION -------- */
+    animation-name: moving;               /* Name of the animation */
+    animation-duration: 2s;               /* Time taken for one animation cycle */
+    animation-iteration-count: infinite;  /* Animation repeats forever */
+    animation-timing-function: linear;    /* Constant animation speed */
+}
+
+/* ================= HOVER (TRANSITION TRIGGER) ================= */
+.box:hover {
+
+    /* Uncomment any one to see transition effect */
+
+    /* background-color: purple; */       /* Changes color on hover */
+    /* height: 300px; */                  /* Increases height */
+    /* width: 300px; */                   /* Increases width */
+
+    /* transform: scale(2); */            /* Scales box uniformly */
+    /* transform: scaleX(2); */           /* Scales box only on X-axis */
+
+    /* transform: translate(100px,200px); */ /* Moves box X & Y */
+    /* transform: translateX(100px); */       /* Moves box horizontally */
+    /* transform: translateY(100px); */       /* Moves box vertically */
+
+    /* transform: rotate(40deg); */       /* Rotates box in 2D */
+    /* transform: rotateX(40deg); */      /* Rotates box in 3D on X-axis */
+    /* transform: rotateY(40deg); */      /* Rotates box in 3D on Y-axis */
+
+    /* transform: skew(-30deg); */        /* Skews box on both axes */
+    /* transform: skewY(-30deg); */       /* Skews box on Y-axis */
+
+    /* transform: translateZ(200px); */   /* Moves box towards viewer in 3D */
+}
+
+/* ================= KEYFRAMES ================= */
+@keyframes moving {
+
+    from {
+        transform: rotate(0deg);   /* Starting rotation angle */
+    }
+
+    to {
+        transform: rotate(360deg); /* Complete 360-degree rotation */
+    }
+}

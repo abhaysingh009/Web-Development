@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Supports all characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive layout -->
+    <title>Document</title>
+
+    <style>
+        /* ================= GLOBAL RESET ================= */
+        * {
+            padding: 0px;                 /* Removes default inner spacing */
+            margin: 0px;                  /* Removes default outer spacing */
+            box-sizing: border-box;       /* Width & height include padding and border */
+        }
+
+        /* ================= CONTAINER ================= */
+        .container {
+            height: 100vh;                /* Full screen height */
+            background-color: black;      /* Black background */
+
+            /* position: relative; */     /* (Optional) Needed if children use absolute positioning */
+
+            display: flex;                /* Enables flexbox */
+            align-items: center;          /* Centers items vertically */
+            justify-content: center;      /* Centers items horizontally */
+        }
+
+        /* ================= ROTATING BOX ================= */
+        .box {
+            height: 300px;                /* Height of the circle */
+            width: 300px;                 /* Width of the circle */
+            background-color: red;        /* Red background */
+            border-radius: 50%;           /* Makes the box a perfect circle */
+
+            color: white;                 /* Text color */
+            font-size: 30px;              /* Text size */
+            padding: 50px;                /* Space inside the circle */
+
+            /* -------- CENTER CONTENT (OPTIONAL) -------- */
+            /*
+            display: flex;                
+            justify-content: center;      
+            align-items: center;          
+            */
+
+            /* -------- ABSOLUTE CENTERING (OPTIONAL) -------- */
+            /*
+            position: absolute;           
+            top: 50%;                     
+            left: 50%;                    
+            transform: translate(-50%, -50%);
+            */
+
+            /* -------- ANIMATION -------- */
+            animation-name: moving;               /* Name of animation */
+            animation-duration: 3s;               /* One full rotation time */
+            animation-timing-function: linear;    /* Constant speed */
+            animation-iteration-count: infinite;  /* Repeats forever */
+        }
+
+        /* ================= KEYFRAMES ================= */
+        @keyframes moving {
+
+            /* -------- ADVANCED ORBIT ROTATION (COMMENTED) -------- */
+            /*
+            from {
+                transform: rotate(0deg) translateX(200px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(200px) rotate(-360deg);
+            }
+            */
+
+            /* -------- SIMPLE ROTATION -------- */
+            from {
+                transform: rotate(0deg);   /* Start with no rotation */
+            }
+            to {
+                transform: rotate(360deg); /* Full 360° rotation */
+            }
+        }
+
+        /* ================= INNER CIRCLE (SUN) ================= */
+        .sun {
+            height: 50px;                 /* Height of the sun */
+            width: 50px;                  /* Width of the sun */
+            border-radius: 50%;           /* Makes it circular */
+            background-color: green;      /* Green color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">              <!-- Main wrapper -->
+        <div class="box">                <!-- Rotating circle -->
+            <div class="sun"></div>       <!-- Small inner circle -->
+        </div>
+    </div>
+</body>
+</html>
