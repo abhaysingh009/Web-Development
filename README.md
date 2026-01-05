@@ -9,7 +9,7 @@
 
 -JavaScript(in progress...)
 
--MERN Stack (in progress...)
+-React js (in progress...)
 
 
 This repository contains all my web development practice files.
