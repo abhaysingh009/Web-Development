@@ -1,37 +1,47 @@
 # Web Development
 
-A collection of my web development practice and learning experiments.
+A structured repository documenting my progression from fundamentals to advanced concepts in web development.
 
-## Stack
+## Tech Stack
 
 * HTML5
 * CSS3
-* JavaScript *(in progress)*
-* React *(in progress)*
+* JavaScript
+* React
 
-## About
+## Overview
 
-This repository contains small projects, experiments, and code snippets focused on building a strong foundation in front-end development.
+This repository is a continuously evolving collection of projects, experiments, and implementations aimed at building a deep understanding of front-end development.
 
-Each file includes inline comments explaining key concepts, structure, and implementation details for better understanding and revision.
+The focus is not just on writing code, but on understanding **how and why things work**, with emphasis on clean structure, scalability, and best practices.
 
-## Content
+## Scope
 
-* HTML fundamentals
-* CSS (layout, Flexbox, Grid, styling)
-* Basic UI components (forms, buttons, cards, navbars)
-* JavaScript basics
+* Core web fundamentals (HTML, CSS)
+* Layout systems (Flexbox, Grid)
+* Component-based UI development
+* JavaScript logic and DOM manipulation
+* Progressive transition towards advanced concepts and frameworks
 
-## Approach
+## Code Philosophy
 
-* Write clean and readable code
-* Keep concepts well-documented using comments
-* Practice consistently and track progress
+* Clarity over complexity
+* Consistent structure and naming
+* Concept-driven implementation
+* Incremental improvement
 
-## Usage
+## Repository Usage
 
-Clone the repository and open files in any browser or code editor.
+This repository serves as:
 
-```bash
+* A long-term learning log
+* A reference for revision
+* A base for building more complex projects
+
+## Getting Started
+
+```bash id="k2la9d"
 git clone https://github.com/your-username/your-repo-name.git
 ```
+
+Open any file or project in a browser or your preferred editor to explore.
