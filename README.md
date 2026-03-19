@@ -1,76 +1,37 @@
-# Web-Development
-📘 Web Development Practice Repository
+# Web Development
 
-🛠️ Technologies Used
+A collection of my web development practice and learning experiments.
 
--HTML5
+## Stack
 
--CSS3
+* HTML5
+* CSS3
+* JavaScript *(in progress)*
+* React *(in progress)*
 
--JavaScript(in progress...)
+## About
 
--React js (in progress...)
+This repository contains small projects, experiments, and code snippets focused on building a strong foundation in front-end development.
 
+Each file includes inline comments explaining key concepts, structure, and implementation details for better understanding and revision.
 
-This repository contains all my web development practice files.
-Each file includes detailed comments explaining important concepts such as:
+## Content
 
-🔹 HTML tags and their purpose
+* HTML fundamentals
+* CSS (layout, Flexbox, Grid, styling)
+* Basic UI components (forms, buttons, cards, navbars)
+* JavaScript basics
 
-🔹 CSS properties and layout techniques
+## Approach
 
-🔹 Best practices for structuring web pages
+* Write clean and readable code
+* Keep concepts well-documented using comments
+* Practice consistently and track progress
 
-🔹 JavaScript logics 
+## Usage
 
-The goal of this repository is to serve as a personal learning log and an easy revision resource.
+Clone the repository and open files in any browser or code editor.
 
-🚀 Purpose of This Repository
-
-Practice web development consistently
-
-Write clean, well-structured code
-
-Document every important tag, property, or technique using comments
-
-Build a revision-friendly collection of examples
-
-🧠 What You’ll Find Inside
-
-Explained HTML tags 
-
-CSS fundamentals (colors, fonts, margins, padding, borders)
-
-Layout techniques (Flexbox, Grid, positioning)
-
-Small UI components (buttons, cards, forms, navbars)
-
-Notes added inside code using comments like:
-
-<!-- This div is used as a container for all items -->
-
-/* flex-direction: row places items horizontally */
-
-📈 Learning Approach
-
-Create a file or project
-
-Write clean and readable code
-
-Add comments to explain each important part
-
-Push changes to GitHub regularly
-
-Use this repo as revision material anytime
-
-📅 Progress Tracking
-
-I upload files regularly as part of my learning journey.
-
-🤝 Contributions
-
-This is a personal learning project, but suggestions and improvements are always welcome!
-
-⭐ Acknowledgements
-
-Thanks to online resources, tutorials, documentation, and all guidance that support this learning journey.
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
