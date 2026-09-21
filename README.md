@@ -17,7 +17,7 @@ The focus is not just on writing code, but on understanding **how and why things
 
 ## Scope
 
-* Core web fundamentals (HTML, CSS)
+* Core web fundamentals of Web Dev
 * Layout systems (Flexbox, Grid)
 * Component-based UI development
 * JavaScript logic and DOM manipulation
