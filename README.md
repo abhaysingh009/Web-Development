@@ -11,7 +11,7 @@ A structured repository documenting my progression from fundamentals to advanced
 
 ## Overview
 
-This repository is a continuously evolving collection of projects, experiments, and implementations aimed at building a deep understanding of front-end development.
+This repository is a continuously evolving collection of projects, experiments, and implementations aimed at building a deep understanding of full-stack development.
 
 The focus is not just on writing code, but on understanding **how and why things work**, with emphasis on clean structure, scalability, and best practices.
 
