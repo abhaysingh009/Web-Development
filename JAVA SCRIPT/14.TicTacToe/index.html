@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #board{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            background-color: blueviolet;
+            border-radius: 8px;
+        }
+        #board button{
+            height: 80px;
+            width: 80px;
+            /* border: 5px solid rgb(71, 61, 96); */
+            border-radius: 8px; 
+            background-color: rgba(59, 15, 99, 0.712);
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+        }
+        #board button:hover{
+            cursor: pointer;
+        }
+        .reset{
+            height: 40px;
+            width: 130px;
+            background-color:rgb(21, 146, 21);
+            border-radius:10px ;
+            color: white;
+        }
+        .reset:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(10, 20, 30); color: white; height: 100vh; display: flex; flex-direction: column; justify-content: center;align-items: center; gap: 20px;">
+    <h1 style="height: 20px; color: rgb(15, 152, 86);">Tic Tac Toe</h1>
+    <br>
+    <div id="status" style="font-weight: bold;">Player X's Turn</div>
+    <div id= "board">
+        <button class="cell" id="0"></button>
+        <button class="cell" id="1"></button>
+        <button class="cell" id="2"></button>
+        <button class="cell" id="3"></button>
+        <button class="cell" id="4"></button>
+        <button class="cell" id="5"></button>
+        <button class="cell" id="6"></button>
+        <button class="cell" id="7"></button>
+        <button class="cell" id="8"></button>
+    </div>
+
+    <button class="reset" id="resetBtn" >Reset Game</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
