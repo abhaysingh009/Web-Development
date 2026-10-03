@@ -1,0 +1,96 @@
+<-- Memory Management  -->
+
+- in js data type get memory in heap and its address is stored in stack  , small nums can also directly stored in stack
+  a-->0x6522                                 10 at adr= 0x6522 in heap
+- garbage collector deletes space which are not mapped with stack 
+- garbage collector is a code that is continuouly running but js can run only one instruction at a time ,
+ that's why js feels slow 
+
+in heap we have to find empty space first that's heap memory allocation is slower than stack mem allocation
+
+
+
+ a=10 
+ b=20
+
+ function add(num1,num2){
+    var sum=num1+num2
+ }
+SumResult=add(a,b)
+SumResult2=add(2,3)
+console.log(SumResult, SumResult2)
+
+jaise hi code run hoaga 
+execution context create hoga 
+
+Hoisting in JavaScript--------------------------------------------------------
+
+Hoisting means that during the creation phase of an execution context, JavaScript processes declarations before executing the code.
+
+Execution Context
+
+When code starts running, the JS engine creates a Global Execution Context (GEC). Every execution context has two phases:
+
+Memory Allocation (creation) phase: variables and functions are given space.
+Code Execution phase: code runs line by line and values get assigned.
+4. Walkthrough of Your Example
+
+First, a fix to your code. add never returns anything, so SumResult would be undefined. I've added return sum, and declared a and b with var, because bare a = 10 creates an implicit global and isn't hoisted.
+
+js
+var a = 10;
+var b = 20;
+
+function add(num1, num2) {
+  var sum = num1 + num2;
+  return sum;
+}
+
+var SumResult = add(a, b);
+var SumResult2 = add(2, 3);
+console.log(SumResult, SumResult2);
+Global EC: Phase 1 (Memory Allocation)
+a          = undefined
+b          = undefined
+add        = function add(num1, num2) {...}   // whole function stored (hoisting)
+SumResult  = undefined
+SumResult2 = undefined
+ BUT LET AND CONST GOES <UNINITIALIZED>(TEMPORAL DEAD ZONE)  EG.  let a =<unin...d> (temp d z..e);
+Variables get undefined, but function declarations are stored completely, which is why you can call a function before its definition.
+
+Global EC: Phase 2 (Code Execution)
+a = 10
+b = 20
+add(a, b) is called, so a new Function Execution Context is created and pushed on the call stack.
+Function EC for add(a, b)
+
+Memory phase:
+
+num1 = undefined
+num2 = undefined
+sum  = undefined
+
+Execution phase:
+
+num1 = 10, num2 = 20
+sum  = 30
+return sum  → 30 goes back to the caller
+
+The function EC is popped from the call stack and its local variables are destroyed. SumResult = 30.
+
+add(2, 3) creates another new Function EC with the same two phases: num1 = 2, num2 = 3, sum = 5. It returns 5 and is popped, so SumResult2 = 5.
+console.log(SumResult, SumResult2) prints 30 5.
+The program ends and the Global EC is popped.
+Call Stack Over Time
+[GEC]
+[GEC, add(a,b)]     → returns 30
+[GEC]
+[GEC, add(2,3)]     → returns 5
+[GEC]
+[]                  → program finished
+5. Quick Revision
+Primitives go on the stack. Objects, arrays and functions go in the heap, with a reference on the stack.
+Stack allocation is fast. Heap allocation is slower because it must find free space.
+The GC removes unreachable heap memory (mark and sweep), and it runs periodically, not continuously.
+Every execution context has a memory phase and a code phase.
+Every function call creates a new execution context, which is destroyed after it returns.
